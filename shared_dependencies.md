@@ -1,19 +1,17 @@
-1. "Book" Class: This class will be shared across "src/main.py", "src/book.py", "src/chapter.py", "src/document_editor.py", and "src/tools/word_count.py". It will contain properties like title, author, chapters, etc.
+1. "Book" and "Novel" Classes: These classes will be shared across "main.py", "chapter.py", "book.py", and "novel.py". They will contain properties like title, author, number of chapters, etc.
 
-2. "Chapter" Class: This class will be shared across "src/book.py", "src/chapter.py", "src/document_editor.py", and "src/tools/word_count.py". It will contain properties like title, content, word count, etc.
+2. "DocumentEditor" Class: This class will be used in "document_editor.py" and "main.py". It will contain methods for creating, editing, and saving books and novels.
 
-3. "DocumentEditor" Class: This class will be shared across "src/main.py", "src/document_editor.py", "src/ui/main_window.py", "src/ui/chapter_window.py", "src/ui/tool_window.py", "src/ui/settings_window.py".
+3. "UI" Class: This class will be used in "ui.py" and "main.py". It will contain methods for rendering the user interface and handling user interactions.
 
-4. "Tool" Classes: These classes (WordCount, SpellCheck, GrammarCheck, CharacterTracker, PlotDevelopment) will be shared across "src/document_editor.py", "src/tools/word_count.py", "src/tools/spell_check.py", "src/tools/grammar_check.py", "src/tools/character_tracker.py", "src/tools/plot_development.py", "src/ui/tool_window.py".
+4. "Tool" Classes: These classes will be used in all the tool files and "main.py". They will contain methods for word count, character count, grammar check, spell check, thesaurus, plot generator, character development, and setting description.
 
-5. "Window" Classes: These classes (MainWindow, ChapterWindow, ToolWindow, SettingsWindow, HelpWindow, AboutWindow) will be shared across "src/main.py", "src/ui/main_window.py", "src/ui/chapter_window.py", "src/ui/tool_window.py", "src/ui/settings_window.py", "src/ui/help_window.py", "src/ui/about_window.py".
+5. "Debug" Function: This function will be used in "debug.py" and potentially in all other files for debugging purposes.
 
-6. "Manager" Classes: These classes (FileManager, SettingsManager, HelpManager, AboutManager, ThemeManager, StyleManager) will be shared across "src/main.py", "src/utils/file_manager.py", "src/utils/settings_manager.py", "src/utils/help_manager.py", "src/utils/about_manager.py", "src/utils/theme_manager.py", "src/utils/style_manager.py".
+6. "README.md": This file will be used in the root directory to provide information about the application.
 
-7. "Theme" and "Style" Classes: These classes will be shared across "src/ui/main_window.py", "src/ui/chapter_window.py", "src/ui/tool_window.py", "src/ui/settings_window.py", "src/ui/help_window.py", "src/ui/about_window.py", "src/ui/theme.py", "src/ui/style.py", "src/utils/theme_manager.py", "src/utils/style_manager.py".
+7. DOM Element IDs: These will be used in "ui.py" for JavaScript functions to manipulate the user interface. Some potential IDs could be "bookTitle", "chapterCount", "wordCount", "characterCount", etc.
 
-8. DOM Element IDs: These will be shared across all the UI files and will be used to manipulate the UI elements.
+8. Message Names: These will be used in "ui.py" and potentially in all other files for displaying messages to the user. Some potential message names could be "saveSuccess", "saveFailure", "editSuccess", "editFailure", etc.
 
-9. Message Names: These will be shared across all the files for communication between different parts of the application.
-
-10. Function Names: These will be shared across all the files for performing specific tasks.
+9. Data Schemas: These will be used in "book.py", "novel.py", and "chapter.py" to define the structure of a book, novel, and chapter respectively. They will also be used in "document_editor.py" for saving and loading data.
