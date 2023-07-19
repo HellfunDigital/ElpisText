@@ -2,7 +2,7 @@
 import re
 from spellchecker import SpellChecker
 
-class SpellCheck:
+class SpellCheckTool:
     def __init__(self):
         self.spell = SpellChecker()
 
@@ -13,4 +13,7 @@ class SpellCheck:
 
     def suggest_corrections(self, word):
         return self.spell.correction(word)
+
+    def get_candidates(self, word):
+        return self.spell.candidates(word)
 ```
